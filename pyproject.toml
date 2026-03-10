@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rdna3-optimization-layer"
+version = "0.1.0"
+description = "RDNA3 atlas-backed optimization layer demo by Craig Hasselbring"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+  { name = "Craig Hasselbring", email = "craig@localhost" }
+]
+license = { text = "MIT" }
+classifiers = [
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Operating System :: OS Independent"
+]
+
+[project.scripts]
+rdna3-opt = "rdna3_optimization_layer.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["rdna3_optimization_layer*"]

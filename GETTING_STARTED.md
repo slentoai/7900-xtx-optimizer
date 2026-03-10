@@ -98,3 +98,23 @@ py -3 -m rdna3_optimization_layer launch -- .\my_app.exe --batch-size 64
 - Exact tuning is based on the RX 7900 XTX reference atlas.
 - Other RDNA3 devices are supported by autodetect plus conservative scaling.
 - Non-RDNA3 devices are detected and left untouched.
+
+
+## License
+
+Released under the MIT License. See `LICENSE`.
+
+
+## Decompress the Export
+
+`atlas_export.json.gz` is compressed for GitHub compatibility.
+
+Linux/macOS:
+```bash
+gunzip -k atlas_export.json.gz
+```
+
+Windows PowerShell:
+```powershell
+gzip -d atlas_export.json.gz
+```

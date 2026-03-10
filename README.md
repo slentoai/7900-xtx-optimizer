@@ -41,3 +41,23 @@ Quick start is documented in [GETTING_STARTED.md](GETTING_STARTED.md).
 - The SQLite database contains three tables: `data_points`, `invariants`, and `discovery_sessions`.
 - This package is intended to let you publish the measured 7900 XTX atlas data without publishing the discovery tool itself.
 - The optimization layer is a user-space demo and does not modify the AMD kernel driver.
+
+
+## License
+
+Released under the MIT License. See `LICENSE`.
+
+
+## Decompress the Export
+
+`atlas_export.json.gz` is compressed for GitHub compatibility.
+
+Linux/macOS:
+```bash
+gunzip -k atlas_export.json.gz
+```
+
+Windows PowerShell:
+```powershell
+gzip -d atlas_export.json.gz
+```
