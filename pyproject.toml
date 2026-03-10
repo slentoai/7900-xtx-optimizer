@@ -23,3 +23,6 @@ rdna3-opt = "rdna3_optimization_layer.cli:main"
 
 [tool.setuptools.packages.find]
 include = ["rdna3_optimization_layer*"]
+
+[tool.setuptools.package-data]
+rdna3_optimization_layer = ["data/*.json"]

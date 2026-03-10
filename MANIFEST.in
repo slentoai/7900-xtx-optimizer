@@ -1,0 +1,2 @@
+include README.md LICENSE
+recursive-include rdna3_optimization_layer/data *.json

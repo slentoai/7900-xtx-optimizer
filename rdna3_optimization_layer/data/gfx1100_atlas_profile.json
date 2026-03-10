@@ -1,0 +1,125 @@
+{
+  "generated": "2026-03-05T00:35:07.714989",
+  "source": "rdna3-discovery atlas (100% coverage)",
+  "gpu": {
+    "name": "RX 7900 XTX",
+    "arch": "gfx1100",
+    "family": "RDNA3",
+    "compute_units": 96,
+    "wave_size": 32,
+    "clock_mhz": 2500
+  },
+  "memory_hierarchy": {
+    "infinity_cache_size_mb": 96,
+    "effective_ic_boundary_kb": 1046,
+    "peak_cached_bandwidth_gb_s": 2561.6,
+    "dram_bandwidth_gb_s": 2043.5,
+    "dram_bandwidth_pct_peak": 212.9,
+    "cache_to_dram_ratio": 1.25
+  },
+  "lds": {
+    "num_banks": 32,
+    "bank_width_bytes": 4,
+    "lds_per_cu_kb": 128,
+    "peak_lds_bandwidth_gb_s": 1420.0,
+    "best_strides": [
+      1,
+      2,
+      21,
+      22,
+      23
+    ],
+    "worst_strides": [
+      32
+    ],
+    "conflict_penalty_pct": 86.6,
+    "recommended_padding": 1
+  },
+  "block_size": {
+    "optimal_block_size": 128,
+    "optimal_elements_per_thread": 2,
+    "block_size_ranking": [
+      {
+        "block_size": 32,
+        "avg_score": 0.167
+      },
+      {
+        "block_size": 256,
+        "avg_score": 0.161
+      },
+      {
+        "block_size": 128,
+        "avg_score": 0.161
+      },
+      {
+        "block_size": 64,
+        "avg_score": 0.16
+      },
+      {
+        "block_size": 512,
+        "avg_score": 0.158
+      },
+      {
+        "block_size": 1024,
+        "avg_score": 0.155
+      }
+    ],
+    "wave_size": 32,
+    "preferred_block_sizes": [
+      32,
+      256,
+      128
+    ]
+  },
+  "compute": {
+    "fp32": {
+      "optimal_fma_chains": 7,
+      "optimal_block_size": 512,
+      "peak_tflops": 50.06,
+      "serial_tflops": 21.48,
+      "ilp_speedup": 2.33
+    },
+    "fp16": {
+      "optimal_half2_chains": 11,
+      "optimal_block_size": 1024,
+      "peak_tflops": 57.92,
+      "serial_tflops": 55.52,
+      "ilp_speedup": 1.04
+    },
+    "reduction": {
+      "optimal_block_size": 512,
+      "optimal_items_per_thread": 7
+    },
+    "tiled_gemm": {
+      "optimal_tile_m": 128,
+      "optimal_tile_n": 128
+    },
+    "wave_scheduling": {
+      "optimal_waves_per_cu": 31,
+      "optimal_occupancy_pct": 95
+    },
+    "wmma": {
+      "optimal_k_tiles": 34,
+      "optimal_chains": 6,
+      "peak_tflops": 88.76
+    },
+    "atomic": {
+      "optimal_block_size": 1024,
+      "optimal_unique_targets": 982,
+      "peak_gops": 431.38,
+      "contended_gops": 2.88
+    },
+    "overlap": {
+      "optimal_compute_intensity": 1,
+      "optimal_working_set_kb": 82719,
+      "peak_effective_gb_s": 1891.0
+    }
+  },
+  "optimization_hints": {
+    "use_coalesced_access": true,
+    "avoid_stride_multiples_of_32_in_lds": true,
+    "tile_to_infinity_cache": true,
+    "preferred_vectorization": "float4",
+    "fp64_rate": "1:32 (avoid FP64 on RDNA3)"
+  }
+}
