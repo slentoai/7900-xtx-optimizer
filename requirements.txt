@@ -1,0 +1,2 @@
+# Standard-library only demo package.
+# No third-party Python dependencies are required.

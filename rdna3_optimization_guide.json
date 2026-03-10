@@ -1,0 +1,3318 @@
+{
+  "gpu": "RX 7900 XTX",
+  "arch": "gfx1100 (RDNA3)",
+  "kernel_rules": {
+    "strided_access": {
+      "best_configs": [
+        {
+          "params": {
+            "stride": 1,
+            "working_set_kb": 30048
+          },
+          "score": 1.0,
+          "bandwidth_gb_s": 2194.37
+        },
+        {
+          "params": {
+            "stride": 1,
+            "working_set_kb": 36122
+          },
+          "score": 1.0,
+          "bandwidth_gb_s": 2165.7
+        },
+        {
+          "params": {
+            "stride": 1,
+            "working_set_kb": 3616
+          },
+          "score": 1.0,
+          "bandwidth_gb_s": 2093.41
+        },
+        {
+          "params": {
+            "stride": 1,
+            "working_set_kb": 24995
+          },
+          "score": 1.0,
+          "bandwidth_gb_s": 2445.28
+        },
+        {
+          "params": {
+            "stride": 4,
+            "working_set_kb": 52204
+          },
+          "score": 1.0,
+          "bandwidth_gb_s": 2094.26
+        }
+      ],
+      "worst_configs": [
+        {
+          "params": {
+            "stride": 827,
+            "working_set_kb": 130992
+          },
+          "score": 0.0,
+          "bandwidth_gb_s": 0.0
+        },
+        {
+          "params": {
+            "stride": 464,
+            "working_set_kb": 130881
+          },
+          "score": 5e-06,
+          "bandwidth_gb_s": 0.01
+        },
+        {
+          "params": {
+            "stride": 275,
+            "working_set_kb": 131032
+          },
+          "score": 5e-06,
+          "bandwidth_gb_s": 0.01
+        },
+        {
+          "params": {
+            "stride": 969,
+            "working_set_kb": 14
+          },
+          "score": 0.0008900000000000001,
+          "bandwidth_gb_s": 1.78
+        },
+        {
+          "params": {
+            "stride": 656,
+            "working_set_kb": 298
+          },
+          "score": 0.00098,
+          "bandwidth_gb_s": 1.96
+        }
+      ],
+      "parameters": {
+        "stride": {
+          "cliffs": [
+            {
+              "threshold": 827.0,
+              "magnitude_pct": 97.6,
+              "description": "Performance drops 98% when stride increases from 827 to 827",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 666.0,
+              "magnitude_pct": 96.4,
+              "description": "Performance drops 96% when stride increases from 666 to 666",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 546.0,
+              "magnitude_pct": 95.9,
+              "description": "Performance drops 96% when stride increases from 546 to 546",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 907.0,
+              "magnitude_pct": 95.9,
+              "description": "Performance drops 96% when stride increases from 907 to 907",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 907.0,
+              "magnitude_pct": 95.9,
+              "description": "Performance drops 96% when stride increases from 907 to 907",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 907.0,
+              "magnitude_pct": 95.9,
+              "description": "Performance drops 96% when stride increases from 907 to 907",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 907.0,
+              "magnitude_pct": 95.7,
+              "description": "Performance drops 96% when stride increases from 907 to 907",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 907.0,
+              "magnitude_pct": 95.7,
+              "description": "Performance drops 96% when stride increases from 907 to 907",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 246.0,
+              "magnitude_pct": 95.6,
+              "description": "Performance drops 96% when stride increases from 246 to 246",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 911.0,
+              "magnitude_pct": 95.5,
+              "description": "Performance drops 95% when stride increases from 911 to 911",
+              "confidence": 1.0
+            }
+          ],
+          "sweet_spots": [
+            {
+              "value": 10.0,
+              "prominence_pct": 99.8,
+              "description": "Performance peak at stride=10 (score=1.000, prominence=0.998)"
+            },
+            {
+              "value": 10.0,
+              "prominence_pct": 99.8,
+              "description": "Performance peak at stride=10 (score=1.000, prominence=0.998)"
+            },
+            {
+              "value": 10.0,
+              "prominence_pct": 82.8,
+              "description": "Performance peak at stride=10 (score=0.830, prominence=0.828)"
+            },
+            {
+              "value": 11.0,
+              "prominence_pct": 78.8,
+              "description": "Performance peak at stride=11 (score=0.790, prominence=0.788)"
+            },
+            {
+              "value": 11.0,
+              "prominence_pct": 78.8,
+              "description": "Performance peak at stride=11 (score=0.790, prominence=0.788)"
+            },
+            {
+              "value": 11.0,
+              "prominence_pct": 78.8,
+              "description": "Performance peak at stride=11 (score=0.790, prominence=0.788)"
+            },
+            {
+              "value": 11.0,
+              "prominence_pct": 78.8,
+              "description": "Performance peak at stride=11 (score=0.790, prominence=0.788)"
+            },
+            {
+              "value": 11.0,
+              "prominence_pct": 78.8,
+              "description": "Performance peak at stride=11 (score=0.790, prominence=0.788)"
+            },
+            {
+              "value": 11.0,
+              "prominence_pct": 78.8,
+              "description": "Performance peak at stride=11 (score=0.790, prominence=0.788)"
+            },
+            {
+              "value": 12.0,
+              "prominence_pct": 59.3,
+              "description": "Performance peak at stride=12 (score=0.595, prominence=0.593)"
+            }
+          ],
+          "optimal_range": {
+            "min": 1,
+            "max": 7,
+            "count": 7
+          }
+        },
+        "working_set_kb": {
+          "cliffs": [
+            {
+              "threshold": 130992.0,
+              "magnitude_pct": 100.0,
+              "description": "Performance drops 100% when working_set_kb increases from 130976 to 130992",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 130881.0,
+              "magnitude_pct": 100.0,
+              "description": "Performance drops 100% when working_set_kb increases from 130764 to 130881",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 130881.0,
+              "magnitude_pct": 100.0,
+              "description": "Performance drops 100% when working_set_kb increases from 130764 to 130881",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 130881.0,
+              "magnitude_pct": 100.0,
+              "description": "Performance drops 100% when working_set_kb increases from 130764 to 130881",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 130881.0,
+              "magnitude_pct": 100.0,
+              "description": "Performance drops 100% when working_set_kb increases from 130764 to 130881",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 130881.0,
+              "magnitude_pct": 100.0,
+              "description": "Performance drops 100% when working_set_kb increases from 130764 to 130881",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 1583.0,
+              "magnitude_pct": 99.8,
+              "description": "Performance drops 100% when working_set_kb increases from 1583 to 1583",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 1583.0,
+              "magnitude_pct": 99.8,
+              "description": "Performance drops 100% when working_set_kb increases from 1583 to 1583",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 521.0,
+              "magnitude_pct": 99.7,
+              "description": "Performance drops 100% when working_set_kb increases from 521 to 521",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 521.0,
+              "magnitude_pct": 99.7,
+              "description": "Performance drops 100% when working_set_kb increases from 521 to 521",
+              "confidence": 1.0
+            }
+          ],
+          "sweet_spots": [
+            {
+              "value": 130764.0,
+              "prominence_pct": 100.0,
+              "description": "Performance peak at working_set_kb=130764 (score=1.000, prominence=1.000)"
+            },
+            {
+              "value": 2692.0,
+              "prominence_pct": 99.7,
+              "description": "Performance peak at working_set_kb=2692 (score=1.000, prominence=0.997)"
+            },
+            {
+              "value": 1461.0,
+              "prominence_pct": 99.7,
+              "description": "Performance peak at working_set_kb=1461 (score=1.000, prominence=0.997)"
+            },
+            {
+              "value": 2282.0,
+              "prominence_pct": 99.7,
+              "description": "Performance peak at working_set_kb=2282 (score=1.000, prominence=0.997)"
+            },
+            {
+              "value": 2282.0,
+              "prominence_pct": 99.7,
+              "description": "Performance peak at working_set_kb=2282 (score=1.000, prominence=0.997)"
+            },
+            {
+              "value": 1776.0,
+              "prominence_pct": 99.6,
+              "description": "Performance peak at working_set_kb=1776 (score=1.000, prominence=0.996)"
+            },
+            {
+              "value": 1776.0,
+              "prominence_pct": 99.6,
+              "description": "Performance peak at working_set_kb=1776 (score=1.000, prominence=0.996)"
+            },
+            {
+              "value": 1776.0,
+              "prominence_pct": 99.6,
+              "description": "Performance peak at working_set_kb=1776 (score=1.000, prominence=0.996)"
+            },
+            {
+              "value": 1776.0,
+              "prominence_pct": 99.6,
+              "description": "Performance peak at working_set_kb=1776 (score=1.000, prominence=0.996)"
+            },
+            {
+              "value": 1157.0,
+              "prominence_pct": 99.6,
+              "description": "Performance peak at working_set_kb=1157 (score=1.000, prominence=0.996)"
+            }
+          ],
+          "optimal_range": {
+            "min": 1030,
+            "max": 131069,
+            "count": 2849
+          }
+        }
+      }
+    },
+    "bandwidth": {
+      "best_configs": [
+        {
+          "params": {
+            "block_size": 128,
+            "elements_per_thread": 2
+          },
+          "score": 0.41941500000000004,
+          "bandwidth_gb_s": 838.83
+        },
+        {
+          "params": {
+            "block_size": 128,
+            "elements_per_thread": 1
+          },
+          "score": 0.41817000000000004,
+          "bandwidth_gb_s": 836.34
+        },
+        {
+          "params": {
+            "block_size": 128,
+            "elements_per_thread": 2
+          },
+          "score": 0.41507499999999997,
+          "bandwidth_gb_s": 830.15
+        },
+        {
+          "params": {
+            "block_size": 512,
+            "elements_per_thread": 2
+          },
+          "score": 0.41452999999999995,
+          "bandwidth_gb_s": 829.06
+        },
+        {
+          "params": {
+            "block_size": 1024,
+            "elements_per_thread": 1
+          },
+          "score": 0.414185,
+          "bandwidth_gb_s": 828.37
+        }
+      ],
+      "worst_configs": [
+        {
+          "params": {
+            "block_size": 32,
+            "elements_per_thread": 30
+          },
+          "score": 0.04114,
+          "bandwidth_gb_s": 82.28
+        },
+        {
+          "params": {
+            "block_size": 512,
+            "elements_per_thread": 30
+          },
+          "score": 0.04226,
+          "bandwidth_gb_s": 84.52
+        },
+        {
+          "params": {
+            "block_size": 1024,
+            "elements_per_thread": 30
+          },
+          "score": 0.044700000000000004,
+          "bandwidth_gb_s": 89.4
+        },
+        {
+          "params": {
+            "block_size": 1024,
+            "elements_per_thread": 30
+          },
+          "score": 0.04977,
+          "bandwidth_gb_s": 99.54
+        },
+        {
+          "params": {
+            "block_size": 128,
+            "elements_per_thread": 30
+          },
+          "score": 0.050105,
+          "bandwidth_gb_s": 100.21
+        }
+      ],
+      "parameters": {
+        "block_size": {
+          "cliffs": [
+            {
+              "threshold": 512.0,
+              "magnitude_pct": 29.7,
+              "description": "Performance drops 30% when block_size increases from 512 to 512",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 128.0,
+              "magnitude_pct": 28.2,
+              "description": "Performance drops 28% when block_size increases from 128 to 128",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 1024.0,
+              "magnitude_pct": 27.9,
+              "description": "Performance drops 28% when block_size increases from 1024 to 1024",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 64.0,
+              "magnitude_pct": 26.8,
+              "description": "Performance drops 27% when block_size increases from 64 to 64",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 64.0,
+              "magnitude_pct": 25.1,
+              "description": "Performance drops 25% when block_size increases from 64 to 64",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 1024.0,
+              "magnitude_pct": 24.8,
+              "description": "Performance drops 25% when block_size increases from 1024 to 1024",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 32.0,
+              "magnitude_pct": 24.8,
+              "description": "Performance drops 25% when block_size increases from 32 to 32",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 256.0,
+              "magnitude_pct": 24.3,
+              "description": "Performance drops 24% when block_size increases from 256 to 256",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 256.0,
+              "magnitude_pct": 24.3,
+              "description": "Performance drops 24% when block_size increases from 256 to 256",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 32.0,
+              "magnitude_pct": 23.7,
+              "description": "Performance drops 24% when block_size increases from 32 to 32",
+              "confidence": 1.0
+            }
+          ],
+          "sweet_spots": [
+            {
+              "value": 1024.0,
+              "prominence_pct": 37.2,
+              "description": "Performance peak at block_size=1024 (score=0.414, prominence=0.372)"
+            },
+            {
+              "value": 64.0,
+              "prominence_pct": 37.2,
+              "description": "Performance peak at block_size=64 (score=0.413, prominence=0.372)"
+            },
+            {
+              "value": 64.0,
+              "prominence_pct": 37.2,
+              "description": "Performance peak at block_size=64 (score=0.413, prominence=0.372)"
+            },
+            {
+              "value": 128.0,
+              "prominence_pct": 36.7,
+              "description": "Performance peak at block_size=128 (score=0.419, prominence=0.367)"
+            },
+            {
+              "value": 128.0,
+              "prominence_pct": 36.7,
+              "description": "Performance peak at block_size=128 (score=0.419, prominence=0.367)"
+            },
+            {
+              "value": 1024.0,
+              "prominence_pct": 36.7,
+              "description": "Performance peak at block_size=1024 (score=0.409, prominence=0.367)"
+            },
+            {
+              "value": 256.0,
+              "prominence_pct": 36.3,
+              "description": "Performance peak at block_size=256 (score=0.414, prominence=0.363)"
+            },
+            {
+              "value": 256.0,
+              "prominence_pct": 36.3,
+              "description": "Performance peak at block_size=256 (score=0.413, prominence=0.363)"
+            },
+            {
+              "value": 256.0,
+              "prominence_pct": 36.3,
+              "description": "Performance peak at block_size=256 (score=0.413, prominence=0.363)"
+            },
+            {
+              "value": 128.0,
+              "prominence_pct": 36.3,
+              "description": "Performance peak at block_size=128 (score=0.415, prominence=0.363)"
+            }
+          ],
+          "optimal_range": {}
+        },
+        "elements_per_thread": {
+          "cliffs": [
+            {
+              "threshold": 1.0,
+              "magnitude_pct": 47.8,
+              "description": "Performance drops 48% when elements_per_thread increases from 1 to 1",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 1.0,
+              "magnitude_pct": 29.6,
+              "description": "Performance drops 30% when elements_per_thread increases from 1 to 1",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 2.0,
+              "magnitude_pct": 29.6,
+              "description": "Performance drops 30% when elements_per_thread increases from 2 to 2",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 27.0,
+              "magnitude_pct": 25.9,
+              "description": "Performance drops 26% when elements_per_thread increases from 27 to 27",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 1.0,
+              "magnitude_pct": 25.8,
+              "description": "Performance drops 26% when elements_per_thread increases from 1 to 1",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 6.0,
+              "magnitude_pct": 23.6,
+              "description": "Performance drops 24% when elements_per_thread increases from 6 to 6",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 31.0,
+              "magnitude_pct": 23.6,
+              "description": "Performance drops 24% when elements_per_thread increases from 31 to 31",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 27.0,
+              "magnitude_pct": 23.1,
+              "description": "Performance drops 23% when elements_per_thread increases from 27 to 27",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 6.0,
+              "magnitude_pct": 22.3,
+              "description": "Performance drops 22% when elements_per_thread increases from 6 to 6",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 6.0,
+              "magnitude_pct": 22.3,
+              "description": "Performance drops 22% when elements_per_thread increases from 6 to 6",
+              "confidence": 1.0
+            }
+          ],
+          "sweet_spots": [
+            {
+              "value": 2.0,
+              "prominence_pct": 23.5,
+              "description": "Performance peak at elements_per_thread=2 (score=0.419, prominence=0.235)"
+            },
+            {
+              "value": 2.0,
+              "prominence_pct": 23.5,
+              "description": "Performance peak at elements_per_thread=2 (score=0.419, prominence=0.235)"
+            },
+            {
+              "value": 3.0,
+              "prominence_pct": 15.9,
+              "description": "Performance peak at elements_per_thread=3 (score=0.410, prominence=0.159)"
+            },
+            {
+              "value": 7.0,
+              "prominence_pct": 11.7,
+              "description": "Performance peak at elements_per_thread=7 (score=0.323, prominence=0.117)"
+            },
+            {
+              "value": 7.0,
+              "prominence_pct": 11.5,
+              "description": "Performance peak at elements_per_thread=7 (score=0.321, prominence=0.115)"
+            },
+            {
+              "value": 7.0,
+              "prominence_pct": 11.1,
+              "description": "Performance peak at elements_per_thread=7 (score=0.318, prominence=0.111)"
+            },
+            {
+              "value": 7.0,
+              "prominence_pct": 8.3,
+              "description": "Performance peak at elements_per_thread=7 (score=0.318, prominence=0.083)"
+            },
+            {
+              "value": 5.0,
+              "prominence_pct": 8.2,
+              "description": "Performance peak at elements_per_thread=5 (score=0.401, prominence=0.082)"
+            },
+            {
+              "value": 5.0,
+              "prominence_pct": 8.2,
+              "description": "Performance peak at elements_per_thread=5 (score=0.401, prominence=0.082)"
+            },
+            {
+              "value": 8.0,
+              "prominence_pct": 8.0,
+              "description": "Performance peak at elements_per_thread=8 (score=0.279, prominence=0.080)"
+            }
+          ],
+          "optimal_range": {
+            "min": 2,
+            "max": 2,
+            "count": 1
+          }
+        }
+      }
+    },
+    "lds_bank": {
+      "best_configs": [
+        {
+          "params": {
+            "stride": 22,
+            "num_elements": 549
+          },
+          "score": 0.71,
+          "bandwidth_gb_s": 1420.0
+        },
+        {
+          "params": {
+            "stride": 29,
+            "num_elements": 390
+          },
+          "score": 0.71,
+          "bandwidth_gb_s": 1420.0
+        },
+        {
+          "params": {
+            "stride": 30,
+            "num_elements": 403
+          },
+          "score": 0.71,
+          "bandwidth_gb_s": 1420.0
+        },
+        {
+          "params": {
+            "stride": 1,
+            "num_elements": 300
+          },
+          "score": 0.71,
+          "bandwidth_gb_s": 1420.0
+        },
+        {
+          "params": {
+            "stride": 63,
+            "num_elements": 481
+          },
+          "score": 0.705,
+          "bandwidth_gb_s": 1410.0
+        }
+      ],
+      "worst_configs": [
+        {
+          "params": {
+            "stride": 32,
+            "num_elements": 14387
+          },
+          "score": 0.095,
+          "bandwidth_gb_s": 190.0
+        },
+        {
+          "params": {
+            "stride": 32,
+            "num_elements": 13927
+          },
+          "score": 0.095,
+          "bandwidth_gb_s": 190.0
+        },
+        {
+          "params": {
+            "stride": 32,
+            "num_elements": 7271
+          },
+          "score": 0.1,
+          "bandwidth_gb_s": 200.0
+        },
+        {
+          "params": {
+            "stride": 32,
+            "num_elements": 13051
+          },
+          "score": 0.1,
+          "bandwidth_gb_s": 200.0
+        },
+        {
+          "params": {
+            "stride": 32,
+            "num_elements": 9244
+          },
+          "score": 0.1,
+          "bandwidth_gb_s": 200.0
+        }
+      ],
+      "parameters": {
+        "stride": {
+          "cliffs": [
+            {
+              "threshold": 2.0,
+              "magnitude_pct": 40.6,
+              "description": "Performance drops 41% when stride increases from 2 to 2",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 2.0,
+              "magnitude_pct": 40.6,
+              "description": "Performance drops 41% when stride increases from 2 to 2",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 21.0,
+              "magnitude_pct": 39.4,
+              "description": "Performance drops 39% when stride increases from 21 to 21",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 32.0,
+              "magnitude_pct": 27.8,
+              "description": "Performance drops 28% when stride increases from 32 to 32",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 3.0,
+              "magnitude_pct": 22.7,
+              "description": "Performance drops 23% when stride increases from 3 to 3",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 3.0,
+              "magnitude_pct": 22.7,
+              "description": "Performance drops 23% when stride increases from 3 to 3",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 3.0,
+              "magnitude_pct": 22.7,
+              "description": "Performance drops 23% when stride increases from 3 to 3",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 3.0,
+              "magnitude_pct": 22.7,
+              "description": "Performance drops 23% when stride increases from 3 to 3",
+              "confidence": 1.0
+            }
+          ],
+          "sweet_spots": [
+            {
+              "value": 33.0,
+              "prominence_pct": 59.5,
+              "description": "Performance peak at stride=33 (score=0.690, prominence=0.595)"
+            },
+            {
+              "value": 33.0,
+              "prominence_pct": 57.0,
+              "description": "Performance peak at stride=33 (score=0.665, prominence=0.570)"
+            },
+            {
+              "value": 33.0,
+              "prominence_pct": 57.0,
+              "description": "Performance peak at stride=33 (score=0.665, prominence=0.570)"
+            },
+            {
+              "value": 33.0,
+              "prominence_pct": 57.0,
+              "description": "Performance peak at stride=33 (score=0.665, prominence=0.570)"
+            },
+            {
+              "value": 33.0,
+              "prominence_pct": 57.0,
+              "description": "Performance peak at stride=33 (score=0.665, prominence=0.570)"
+            },
+            {
+              "value": 22.0,
+              "prominence_pct": 51.0,
+              "description": "Performance peak at stride=22 (score=0.710, prominence=0.510)"
+            },
+            {
+              "value": 3.0,
+              "prominence_pct": 50.5,
+              "description": "Performance peak at stride=3 (score=0.695, prominence=0.505)"
+            },
+            {
+              "value": 49.0,
+              "prominence_pct": 47.5,
+              "description": "Performance peak at stride=49 (score=0.640, prominence=0.475)"
+            },
+            {
+              "value": 49.0,
+              "prominence_pct": 47.5,
+              "description": "Performance peak at stride=49 (score=0.640, prominence=0.475)"
+            },
+            {
+              "value": 49.0,
+              "prominence_pct": 47.5,
+              "description": "Performance peak at stride=49 (score=0.640, prominence=0.475)"
+            }
+          ],
+          "optimal_range": {
+            "min": 1,
+            "max": 63,
+            "count": 56
+          }
+        },
+        "num_elements": {
+          "cliffs": [
+            {
+              "threshold": 12322.0,
+              "magnitude_pct": 82.8,
+              "description": "Performance drops 83% when num_elements increases from 12320 to 12322",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 12322.0,
+              "magnitude_pct": 82.8,
+              "description": "Performance drops 83% when num_elements increases from 12320 to 12322",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 12322.0,
+              "magnitude_pct": 82.8,
+              "description": "Performance drops 83% when num_elements increases from 12320 to 12322",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 12322.0,
+              "magnitude_pct": 82.8,
+              "description": "Performance drops 83% when num_elements increases from 12320 to 12322",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 9025.0,
+              "magnitude_pct": 82.3,
+              "description": "Performance drops 82% when num_elements increases from 9015 to 9025",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 10716.0,
+              "magnitude_pct": 82.1,
+              "description": "Performance drops 82% when num_elements increases from 10716 to 10716",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 9716.0,
+              "magnitude_pct": 81.3,
+              "description": "Performance drops 81% when num_elements increases from 9716 to 9716",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 4352.0,
+              "magnitude_pct": 80.6,
+              "description": "Performance drops 81% when num_elements increases from 4352 to 4352",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 15706.0,
+              "magnitude_pct": 80.6,
+              "description": "Performance drops 81% when num_elements increases from 15703 to 15706",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 10581.0,
+              "magnitude_pct": 80.5,
+              "description": "Performance drops 81% when num_elements increases from 10581 to 10581",
+              "confidence": 1.0
+            }
+          ],
+          "sweet_spots": [
+            {
+              "value": 1026.0,
+              "prominence_pct": 57.0,
+              "description": "Performance peak at num_elements=1026 (score=0.675, prominence=0.570)"
+            },
+            {
+              "value": 1068.0,
+              "prominence_pct": 56.5,
+              "description": "Performance peak at num_elements=1068 (score=0.680, prominence=0.565)"
+            },
+            {
+              "value": 1783.0,
+              "prominence_pct": 56.0,
+              "description": "Performance peak at num_elements=1783 (score=0.680, prominence=0.560)"
+            },
+            {
+              "value": 4052.0,
+              "prominence_pct": 56.0,
+              "description": "Performance peak at num_elements=4052 (score=0.665, prominence=0.560)"
+            },
+            {
+              "value": 2656.0,
+              "prominence_pct": 55.0,
+              "description": "Performance peak at num_elements=2656 (score=0.660, prominence=0.550)"
+            },
+            {
+              "value": 1188.0,
+              "prominence_pct": 54.5,
+              "description": "Performance peak at num_elements=1188 (score=0.675, prominence=0.545)"
+            },
+            {
+              "value": 1741.0,
+              "prominence_pct": 54.5,
+              "description": "Performance peak at num_elements=1741 (score=0.665, prominence=0.545)"
+            },
+            {
+              "value": 6815.0,
+              "prominence_pct": 54.5,
+              "description": "Performance peak at num_elements=6815 (score=0.655, prominence=0.545)"
+            },
+            {
+              "value": 2928.0,
+              "prominence_pct": 54.0,
+              "description": "Performance peak at num_elements=2928 (score=0.645, prominence=0.540)"
+            },
+            {
+              "value": 701.0,
+              "prominence_pct": 54.0,
+              "description": "Performance peak at num_elements=701 (score=0.690, prominence=0.540)"
+            }
+          ],
+          "optimal_range": {
+            "min": 256,
+            "max": 16361,
+            "count": 5915
+          }
+        }
+      }
+    },
+    "compute": {
+      "best_configs": [
+        {
+          "params": {
+            "block_size": 512,
+            "num_chains": 7
+          },
+          "score": 1.0,
+          "bandwidth_gb_s": 2002.4
+        },
+        {
+          "params": {
+            "block_size": 128,
+            "num_chains": 10
+          },
+          "score": 1.0,
+          "bandwidth_gb_s": 2224.0
+        },
+        {
+          "params": {
+            "block_size": 64,
+            "num_chains": 9
+          },
+          "score": 1.0,
+          "bandwidth_gb_s": 2156.8
+        },
+        {
+          "params": {
+            "block_size": 128,
+            "num_chains": 2
+          },
+          "score": 1.0,
+          "bandwidth_gb_s": 2101.2
+        },
+        {
+          "params": {
+            "block_size": 512,
+            "num_chains": 14
+          },
+          "score": 1.0,
+          "bandwidth_gb_s": 2066.3999999999996
+        }
+      ],
+      "worst_configs": [
+        {
+          "params": {
+            "block_size": 256,
+            "num_chains": 1
+          },
+          "score": 0.2132,
+          "bandwidth_gb_s": 426.4
+        },
+        {
+          "params": {
+            "block_size": 256,
+            "num_chains": 1
+          },
+          "score": 0.2146,
+          "bandwidth_gb_s": 429.20000000000005
+        },
+        {
+          "params": {
+            "block_size": 64,
+            "num_chains": 1
+          },
+          "score": 0.2184,
+          "bandwidth_gb_s": 436.8
+        },
+        {
+          "params": {
+            "block_size": 64,
+            "num_chains": 1
+          },
+          "score": 0.2186,
+          "bandwidth_gb_s": 437.2
+        },
+        {
+          "params": {
+            "block_size": 64,
+            "num_chains": 1
+          },
+          "score": 0.2194,
+          "bandwidth_gb_s": 438.8
+        }
+      ],
+      "parameters": {
+        "block_size": {
+          "cliffs": [
+            {
+              "threshold": 64.0,
+              "magnitude_pct": 67.4,
+              "description": "Performance drops 67% when block_size increases from 64 to 64",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 64.0,
+              "magnitude_pct": 67.3,
+              "description": "Performance drops 67% when block_size increases from 64 to 64",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 64.0,
+              "magnitude_pct": 67.3,
+              "description": "Performance drops 67% when block_size increases from 64 to 64",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 32.0,
+              "magnitude_pct": 66.3,
+              "description": "Performance drops 66% when block_size increases from 32 to 32",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 32.0,
+              "magnitude_pct": 59.7,
+              "description": "Performance drops 60% when block_size increases from 32 to 32",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 32.0,
+              "magnitude_pct": 59.6,
+              "description": "Performance drops 60% when block_size increases from 32 to 32",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 256.0,
+              "magnitude_pct": 50.0,
+              "description": "Performance drops 50% when block_size increases from 256 to 256",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 1024.0,
+              "magnitude_pct": 40.1,
+              "description": "Performance drops 40% when block_size increases from 1024 to 1024",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 256.0,
+              "magnitude_pct": 39.5,
+              "description": "Performance drops 39% when block_size increases from 256 to 256",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 128.0,
+              "magnitude_pct": 38.6,
+              "description": "Performance drops 39% when block_size increases from 128 to 128",
+              "confidence": 1.0
+            }
+          ],
+          "sweet_spots": [
+            {
+              "value": 64.0,
+              "prominence_pct": 77.8,
+              "description": "Performance peak at block_size=64 (score=1.000, prominence=0.778)"
+            }
+          ],
+          "optimal_range": {
+            "min": 32,
+            "max": 1024,
+            "count": 6
+          }
+        },
+        "num_chains": {
+          "cliffs": [
+            {
+              "threshold": 1.0,
+              "magnitude_pct": 41.5,
+              "description": "Performance drops 42% when num_chains increases from 1 to 1",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 1.0,
+              "magnitude_pct": 37.8,
+              "description": "Performance drops 38% when num_chains increases from 1 to 1",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 6.0,
+              "magnitude_pct": 28.0,
+              "description": "Performance drops 28% when num_chains increases from 6 to 6",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 8.0,
+              "magnitude_pct": 25.4,
+              "description": "Performance drops 25% when num_chains increases from 8 to 8",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 8.0,
+              "magnitude_pct": 25.4,
+              "description": "Performance drops 25% when num_chains increases from 8 to 8",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 9.0,
+              "magnitude_pct": 24.9,
+              "description": "Performance drops 25% when num_chains increases from 9 to 9",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 4.0,
+              "magnitude_pct": 21.4,
+              "description": "Performance drops 21% when num_chains increases from 4 to 4",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 4.0,
+              "magnitude_pct": 21.4,
+              "description": "Performance drops 21% when num_chains increases from 4 to 4",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 3.0,
+              "magnitude_pct": 21.2,
+              "description": "Performance drops 21% when num_chains increases from 2 to 3",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 3.0,
+              "magnitude_pct": 21.2,
+              "description": "Performance drops 21% when num_chains increases from 2 to 3",
+              "confidence": 1.0
+            }
+          ],
+          "sweet_spots": [
+            {
+              "value": 2.0,
+              "prominence_pct": 78.1,
+              "description": "Performance peak at num_chains=2 (score=1.000, prominence=0.781)"
+            },
+            {
+              "value": 7.0,
+              "prominence_pct": 44.7,
+              "description": "Performance peak at num_chains=7 (score=1.000, prominence=0.447)"
+            },
+            {
+              "value": 5.0,
+              "prominence_pct": 37.4,
+              "description": "Performance peak at num_chains=5 (score=0.932, prominence=0.374)"
+            },
+            {
+              "value": 6.0,
+              "prominence_pct": 34.0,
+              "description": "Performance peak at num_chains=6 (score=0.995, prominence=0.340)"
+            },
+            {
+              "value": 6.0,
+              "prominence_pct": 34.0,
+              "description": "Performance peak at num_chains=6 (score=0.995, prominence=0.340)"
+            },
+            {
+              "value": 5.0,
+              "prominence_pct": 33.2,
+              "description": "Performance peak at num_chains=5 (score=0.890, prominence=0.332)"
+            },
+            {
+              "value": 4.0,
+              "prominence_pct": 29.2,
+              "description": "Performance peak at num_chains=4 (score=0.899, prominence=0.292)"
+            },
+            {
+              "value": 4.0,
+              "prominence_pct": 26.6,
+              "description": "Performance peak at num_chains=4 (score=0.899, prominence=0.266)"
+            },
+            {
+              "value": 8.0,
+              "prominence_pct": 19.9,
+              "description": "Performance peak at num_chains=8 (score=1.000, prominence=0.199)"
+            },
+            {
+              "value": 8.0,
+              "prominence_pct": 17.8,
+              "description": "Performance peak at num_chains=8 (score=1.000, prominence=0.178)"
+            }
+          ],
+          "optimal_range": {
+            "min": 2,
+            "max": 15,
+            "count": 12
+          }
+        }
+      }
+    },
+    "reduction": {
+      "best_configs": [
+        {
+          "params": {
+            "block_size": 512,
+            "items_per_thread": 7
+          },
+          "score": 0.453255,
+          "bandwidth_gb_s": 906.51
+        },
+        {
+          "params": {
+            "block_size": 512,
+            "items_per_thread": 7
+          },
+          "score": 0.453255,
+          "bandwidth_gb_s": 906.51
+        },
+        {
+          "params": {
+            "block_size": 512,
+            "items_per_thread": 6
+          },
+          "score": 0.453215,
+          "bandwidth_gb_s": 906.43
+        },
+        {
+          "params": {
+            "block_size": 512,
+            "items_per_thread": 7
+          },
+          "score": 0.453115,
+          "bandwidth_gb_s": 906.23
+        },
+        {
+          "params": {
+            "block_size": 256,
+            "items_per_thread": 10
+          },
+          "score": 0.452915,
+          "bandwidth_gb_s": 905.83
+        }
+      ],
+      "worst_configs": [
+        {
+          "params": {
+            "block_size": 32,
+            "items_per_thread": 1
+          },
+          "score": 0.19985,
+          "bandwidth_gb_s": 399.7
+        },
+        {
+          "params": {
+            "block_size": 32,
+            "items_per_thread": 1
+          },
+          "score": 0.20036,
+          "bandwidth_gb_s": 400.72
+        },
+        {
+          "params": {
+            "block_size": 32,
+            "items_per_thread": 1
+          },
+          "score": 0.206345,
+          "bandwidth_gb_s": 412.69
+        },
+        {
+          "params": {
+            "block_size": 1024,
+            "items_per_thread": 1
+          },
+          "score": 0.22918,
+          "bandwidth_gb_s": 458.36
+        },
+        {
+          "params": {
+            "block_size": 128,
+            "items_per_thread": 1
+          },
+          "score": 0.23298,
+          "bandwidth_gb_s": 465.96
+        }
+      ],
+      "parameters": {
+        "block_size": {
+          "cliffs": [
+            {
+              "threshold": 32.0,
+              "magnitude_pct": 41.0,
+              "description": "Performance drops 41% when block_size increases from 32 to 32",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 32.0,
+              "magnitude_pct": 41.0,
+              "description": "Performance drops 41% when block_size increases from 32 to 32",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 512.0,
+              "magnitude_pct": 32.8,
+              "description": "Performance drops 33% when block_size increases from 512 to 512",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 512.0,
+              "magnitude_pct": 32.8,
+              "description": "Performance drops 33% when block_size increases from 512 to 512",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 256.0,
+              "magnitude_pct": 32.3,
+              "description": "Performance drops 32% when block_size increases from 256 to 256",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 256.0,
+              "magnitude_pct": 31.1,
+              "description": "Performance drops 31% when block_size increases from 256 to 256",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 1024.0,
+              "magnitude_pct": 30.5,
+              "description": "Performance drops 30% when block_size increases from 1024 to 1024",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 128.0,
+              "magnitude_pct": 30.4,
+              "description": "Performance drops 30% when block_size increases from 128 to 128",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 128.0,
+              "magnitude_pct": 29.6,
+              "description": "Performance drops 30% when block_size increases from 128 to 128",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 1024.0,
+              "magnitude_pct": 29.1,
+              "description": "Performance drops 29% when block_size increases from 1024 to 1024",
+              "confidence": 1.0
+            }
+          ],
+          "sweet_spots": [
+            {
+              "value": 64.0,
+              "prominence_pct": 24.7,
+              "description": "Performance peak at block_size=64 (score=0.446, prominence=0.247)"
+            },
+            {
+              "value": 64.0,
+              "prominence_pct": 24.7,
+              "description": "Performance peak at block_size=64 (score=0.446, prominence=0.247)"
+            },
+            {
+              "value": 256.0,
+              "prominence_pct": 22.0,
+              "description": "Performance peak at block_size=256 (score=0.453, prominence=0.220)"
+            },
+            {
+              "value": 1024.0,
+              "prominence_pct": 21.8,
+              "description": "Performance peak at block_size=1024 (score=0.453, prominence=0.218)"
+            },
+            {
+              "value": 1024.0,
+              "prominence_pct": 21.0,
+              "description": "Performance peak at block_size=1024 (score=0.453, prominence=0.210)"
+            },
+            {
+              "value": 128.0,
+              "prominence_pct": 19.4,
+              "description": "Performance peak at block_size=128 (score=0.450, prominence=0.194)"
+            },
+            {
+              "value": 128.0,
+              "prominence_pct": 19.4,
+              "description": "Performance peak at block_size=128 (score=0.450, prominence=0.194)"
+            }
+          ],
+          "optimal_range": {
+            "min": 32,
+            "max": 1024,
+            "count": 6
+          }
+        },
+        "items_per_thread": {
+          "cliffs": [],
+          "sweet_spots": [
+            {
+              "value": 2.0,
+              "prominence_pct": 17.9,
+              "description": "Performance peak at items_per_thread=2 (score=0.379, prominence=0.179)"
+            },
+            {
+              "value": 2.0,
+              "prominence_pct": 17.9,
+              "description": "Performance peak at items_per_thread=2 (score=0.379, prominence=0.179)"
+            },
+            {
+              "value": 3.0,
+              "prominence_pct": 8.1,
+              "description": "Performance peak at items_per_thread=3 (score=0.430, prominence=0.081)"
+            },
+            {
+              "value": 6.0,
+              "prominence_pct": 8.1,
+              "description": "Performance peak at items_per_thread=6 (score=0.453, prominence=0.081)"
+            },
+            {
+              "value": 6.0,
+              "prominence_pct": 8.0,
+              "description": "Performance peak at items_per_thread=6 (score=0.453, prominence=0.080)"
+            },
+            {
+              "value": 3.0,
+              "prominence_pct": 8.0,
+              "description": "Performance peak at items_per_thread=3 (score=0.430, prominence=0.080)"
+            },
+            {
+              "value": 4.0,
+              "prominence_pct": 5.8,
+              "description": "Performance peak at items_per_thread=4 (score=0.449, prominence=0.058)"
+            },
+            {
+              "value": 4.0,
+              "prominence_pct": 5.7,
+              "description": "Performance peak at items_per_thread=4 (score=0.449, prominence=0.057)"
+            }
+          ],
+          "optimal_range": {
+            "min": 3,
+            "max": 15,
+            "count": 13
+          }
+        }
+      }
+    },
+    "tiled_gemm": {
+      "best_configs": [
+        {
+          "params": {
+            "tile_m": 128,
+            "tile_n": 128
+          },
+          "score": 0.675256,
+          "bandwidth_gb_s": 1350.512
+        },
+        {
+          "params": {
+            "tile_m": 128,
+            "tile_n": 128
+          },
+          "score": 0.6214919999999999,
+          "bandwidth_gb_s": 1242.984
+        },
+        {
+          "params": {
+            "tile_m": 128,
+            "tile_n": 64
+          },
+          "score": 0.44184399999999996,
+          "bandwidth_gb_s": 883.6879999999999
+        },
+        {
+          "params": {
+            "tile_m": 64,
+            "tile_n": 128
+          },
+          "score": 0.42954200000000003,
+          "bandwidth_gb_s": 859.0840000000001
+        },
+        {
+          "params": {
+            "tile_m": 128,
+            "tile_n": 64
+          },
+          "score": 0.425356,
+          "bandwidth_gb_s": 850.712
+        }
+      ],
+      "worst_configs": [
+        {
+          "params": {
+            "tile_m": 4,
+            "tile_n": 4
+          },
+          "score": 0.008486,
+          "bandwidth_gb_s": 16.972
+        },
+        {
+          "params": {
+            "tile_m": 4,
+            "tile_n": 4
+          },
+          "score": 0.008968,
+          "bandwidth_gb_s": 17.936
+        },
+        {
+          "params": {
+            "tile_m": 8,
+            "tile_n": 4
+          },
+          "score": 0.015349999999999999,
+          "bandwidth_gb_s": 30.7
+        },
+        {
+          "params": {
+            "tile_m": 8,
+            "tile_n": 4
+          },
+          "score": 0.01627,
+          "bandwidth_gb_s": 32.54
+        },
+        {
+          "params": {
+            "tile_m": 64,
+            "tile_n": 4
+          },
+          "score": 0.016980000000000002,
+          "bandwidth_gb_s": 33.96
+        }
+      ],
+      "parameters": {
+        "tile_m": {
+          "cliffs": [
+            {
+              "threshold": 64.0,
+              "magnitude_pct": 51.1,
+              "description": "Performance drops 51% when tile_m increases from 64 to 64",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 128.0,
+              "magnitude_pct": 51.1,
+              "description": "Performance drops 51% when tile_m increases from 128 to 128",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 4.0,
+              "magnitude_pct": 50.5,
+              "description": "Performance drops 51% when tile_m increases from 4 to 4",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 4.0,
+              "magnitude_pct": 49.0,
+              "description": "Performance drops 49% when tile_m increases from 4 to 4",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 64.0,
+              "magnitude_pct": 48.7,
+              "description": "Performance drops 49% when tile_m increases from 64 to 64",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 16.0,
+              "magnitude_pct": 48.6,
+              "description": "Performance drops 49% when tile_m increases from 16 to 16",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 16.0,
+              "magnitude_pct": 48.6,
+              "description": "Performance drops 49% when tile_m increases from 16 to 16",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 64.0,
+              "magnitude_pct": 48.2,
+              "description": "Performance drops 48% when tile_m increases from 64 to 64",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 128.0,
+              "magnitude_pct": 48.1,
+              "description": "Performance drops 48% when tile_m increases from 128 to 128",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 8.0,
+              "magnitude_pct": 47.8,
+              "description": "Performance drops 48% when tile_m increases from 8 to 8",
+              "confidence": 1.0
+            }
+          ],
+          "sweet_spots": [
+            {
+              "value": 128.0,
+              "prominence_pct": 65.8,
+              "description": "Performance peak at tile_m=128 (score=0.675, prominence=0.658)"
+            },
+            {
+              "value": 128.0,
+              "prominence_pct": 60.5,
+              "description": "Performance peak at tile_m=128 (score=0.621, prominence=0.605)"
+            },
+            {
+              "value": 64.0,
+              "prominence_pct": 40.9,
+              "description": "Performance peak at tile_m=64 (score=0.430, prominence=0.409)"
+            },
+            {
+              "value": 64.0,
+              "prominence_pct": 36.4,
+              "description": "Performance peak at tile_m=64 (score=0.385, prominence=0.364)"
+            },
+            {
+              "value": 32.0,
+              "prominence_pct": 21.8,
+              "description": "Performance peak at tile_m=32 (score=0.239, prominence=0.218)"
+            },
+            {
+              "value": 32.0,
+              "prominence_pct": 18.1,
+              "description": "Performance peak at tile_m=32 (score=0.202, prominence=0.181)"
+            },
+            {
+              "value": 16.0,
+              "prominence_pct": 11.3,
+              "description": "Performance peak at tile_m=16 (score=0.129, prominence=0.113)"
+            },
+            {
+              "value": 8.0,
+              "prominence_pct": 9.9,
+              "description": "Performance peak at tile_m=8 (score=0.107, prominence=0.099)"
+            },
+            {
+              "value": 16.0,
+              "prominence_pct": 9.6,
+              "description": "Performance peak at tile_m=16 (score=0.112, prominence=0.096)"
+            }
+          ],
+          "optimal_range": {}
+        },
+        "tile_n": {
+          "cliffs": [
+            {
+              "threshold": 64.0,
+              "magnitude_pct": 57.4,
+              "description": "Performance drops 57% when tile_n increases from 64 to 64",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 16.0,
+              "magnitude_pct": 49.0,
+              "description": "Performance drops 49% when tile_n increases from 16 to 16",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 64.0,
+              "magnitude_pct": 48.5,
+              "description": "Performance drops 49% when tile_n increases from 64 to 64",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 128.0,
+              "magnitude_pct": 47.6,
+              "description": "Performance drops 48% when tile_n increases from 128 to 128",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 64.0,
+              "magnitude_pct": 46.5,
+              "description": "Performance drops 47% when tile_n increases from 64 to 64",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 32.0,
+              "magnitude_pct": 46.4,
+              "description": "Performance drops 46% when tile_n increases from 32 to 32",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 128.0,
+              "magnitude_pct": 44.8,
+              "description": "Performance drops 45% when tile_n increases from 128 to 128",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 4.0,
+              "magnitude_pct": 44.7,
+              "description": "Performance drops 45% when tile_n increases from 4 to 4",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 64.0,
+              "magnitude_pct": 44.5,
+              "description": "Performance drops 44% when tile_n increases from 64 to 64",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 32.0,
+              "magnitude_pct": 43.6,
+              "description": "Performance drops 44% when tile_n increases from 32 to 32",
+              "confidence": 1.0
+            }
+          ],
+          "sweet_spots": [
+            {
+              "value": 128.0,
+              "prominence_pct": 64.4,
+              "description": "Performance peak at tile_n=128 (score=0.675, prominence=0.644)"
+            },
+            {
+              "value": 128.0,
+              "prominence_pct": 59.0,
+              "description": "Performance peak at tile_n=128 (score=0.621, prominence=0.590)"
+            },
+            {
+              "value": 64.0,
+              "prominence_pct": 41.0,
+              "description": "Performance peak at tile_n=64 (score=0.442, prominence=0.410)"
+            },
+            {
+              "value": 32.0,
+              "prominence_pct": 22.0,
+              "description": "Performance peak at tile_n=32 (score=0.251, prominence=0.220)"
+            },
+            {
+              "value": 16.0,
+              "prominence_pct": 12.2,
+              "description": "Performance peak at tile_n=16 (score=0.139, prominence=0.122)"
+            },
+            {
+              "value": 16.0,
+              "prominence_pct": 10.9,
+              "description": "Performance peak at tile_n=16 (score=0.126, prominence=0.109)"
+            },
+            {
+              "value": 8.0,
+              "prominence_pct": 6.1,
+              "description": "Performance peak at tile_n=8 (score=0.070, prominence=0.061)"
+            }
+          ],
+          "optimal_range": {}
+        }
+      }
+    },
+    "wave_scheduling": {
+      "best_configs": [
+        {
+          "params": {
+            "waves_per_cu": 31,
+            "occupancy_target_pct": 95
+          },
+          "score": 0.40886,
+          "bandwidth_gb_s": 817.72
+        },
+        {
+          "params": {
+            "waves_per_cu": 31,
+            "occupancy_target_pct": 90
+          },
+          "score": 0.408204,
+          "bandwidth_gb_s": 816.408
+        },
+        {
+          "params": {
+            "waves_per_cu": 31,
+            "occupancy_target_pct": 89
+          },
+          "score": 0.40502200000000005,
+          "bandwidth_gb_s": 810.0440000000001
+        },
+        {
+          "params": {
+            "waves_per_cu": 31,
+            "occupancy_target_pct": 81
+          },
+          "score": 0.401816,
+          "bandwidth_gb_s": 803.6320000000001
+        },
+        {
+          "params": {
+            "waves_per_cu": 31,
+            "occupancy_target_pct": 84
+          },
+          "score": 0.400866,
+          "bandwidth_gb_s": 801.732
+        }
+      ],
+      "worst_configs": [
+        {
+          "params": {
+            "waves_per_cu": 1,
+            "occupancy_target_pct": 10
+          },
+          "score": 0.007358000000000001,
+          "bandwidth_gb_s": 14.716000000000001
+        },
+        {
+          "params": {
+            "waves_per_cu": 1,
+            "occupancy_target_pct": 17
+          },
+          "score": 0.007452,
+          "bandwidth_gb_s": 14.904
+        },
+        {
+          "params": {
+            "waves_per_cu": 1,
+            "occupancy_target_pct": 10
+          },
+          "score": 0.0074860000000000005,
+          "bandwidth_gb_s": 14.972000000000001
+        },
+        {
+          "params": {
+            "waves_per_cu": 1,
+            "occupancy_target_pct": 55
+          },
+          "score": 0.012154,
+          "bandwidth_gb_s": 24.308
+        },
+        {
+          "params": {
+            "waves_per_cu": 1,
+            "occupancy_target_pct": 58
+          },
+          "score": 0.012162,
+          "bandwidth_gb_s": 24.323999999999998
+        }
+      ],
+      "parameters": {
+        "waves_per_cu": {
+          "cliffs": [
+            {
+              "threshold": 1.0,
+              "magnitude_pct": 39.5,
+              "description": "Performance drops 39% when waves_per_cu increases from 1 to 1",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 1.0,
+              "magnitude_pct": 38.4,
+              "description": "Performance drops 38% when waves_per_cu increases from 1 to 1",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 3.0,
+              "magnitude_pct": 37.4,
+              "description": "Performance drops 37% when waves_per_cu increases from 3 to 3",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 3.0,
+              "magnitude_pct": 36.3,
+              "description": "Performance drops 36% when waves_per_cu increases from 3 to 3",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 13.0,
+              "magnitude_pct": 35.6,
+              "description": "Performance drops 36% when waves_per_cu increases from 13 to 13",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 9.0,
+              "magnitude_pct": 32.6,
+              "description": "Performance drops 33% when waves_per_cu increases from 9 to 9",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 9.0,
+              "magnitude_pct": 32.6,
+              "description": "Performance drops 33% when waves_per_cu increases from 9 to 9",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 2.0,
+              "magnitude_pct": 30.8,
+              "description": "Performance drops 31% when waves_per_cu increases from 2 to 2",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 2.0,
+              "magnitude_pct": 29.6,
+              "description": "Performance drops 30% when waves_per_cu increases from 2 to 2",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 7.0,
+              "magnitude_pct": 28.7,
+              "description": "Performance drops 29% when waves_per_cu increases from 7 to 7",
+              "confidence": 1.0
+            }
+          ],
+          "sweet_spots": [
+            {
+              "value": 31.0,
+              "prominence_pct": 29.7,
+              "description": "Performance peak at waves_per_cu=31 (score=0.409, prominence=0.297)"
+            },
+            {
+              "value": 31.0,
+              "prominence_pct": 29.4,
+              "description": "Performance peak at waves_per_cu=31 (score=0.409, prominence=0.294)"
+            },
+            {
+              "value": 30.0,
+              "prominence_pct": 28.2,
+              "description": "Performance peak at waves_per_cu=30 (score=0.392, prominence=0.282)"
+            },
+            {
+              "value": 30.0,
+              "prominence_pct": 28.2,
+              "description": "Performance peak at waves_per_cu=30 (score=0.392, prominence=0.282)"
+            },
+            {
+              "value": 26.0,
+              "prominence_pct": 28.1,
+              "description": "Performance peak at waves_per_cu=26 (score=0.381, prominence=0.281)"
+            },
+            {
+              "value": 26.0,
+              "prominence_pct": 28.1,
+              "description": "Performance peak at waves_per_cu=26 (score=0.381, prominence=0.281)"
+            },
+            {
+              "value": 28.0,
+              "prominence_pct": 28.1,
+              "description": "Performance peak at waves_per_cu=28 (score=0.386, prominence=0.281)"
+            },
+            {
+              "value": 28.0,
+              "prominence_pct": 28.1,
+              "description": "Performance peak at waves_per_cu=28 (score=0.386, prominence=0.281)"
+            },
+            {
+              "value": 29.0,
+              "prominence_pct": 26.0,
+              "description": "Performance peak at waves_per_cu=29 (score=0.388, prominence=0.260)"
+            },
+            {
+              "value": 29.0,
+              "prominence_pct": 26.0,
+              "description": "Performance peak at waves_per_cu=29 (score=0.388, prominence=0.260)"
+            }
+          ],
+          "optimal_range": {}
+        },
+        "occupancy_target_pct": {
+          "cliffs": [
+            {
+              "threshold": 55.0,
+              "magnitude_pct": 85.3,
+              "description": "Performance drops 85% when occupancy_target_pct increases from 55 to 55",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 75.0,
+              "magnitude_pct": 84.0,
+              "description": "Performance drops 84% when occupancy_target_pct increases from 75 to 75",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 17.0,
+              "magnitude_pct": 75.2,
+              "description": "Performance drops 75% when occupancy_target_pct increases from 17 to 17",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 58.0,
+              "magnitude_pct": 73.2,
+              "description": "Performance drops 73% when occupancy_target_pct increases from 58 to 58",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 26.0,
+              "magnitude_pct": 70.9,
+              "description": "Performance drops 71% when occupancy_target_pct increases from 26 to 26",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 85.0,
+              "magnitude_pct": 70.6,
+              "description": "Performance drops 71% when occupancy_target_pct increases from 85 to 85",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 39.0,
+              "magnitude_pct": 69.0,
+              "description": "Performance drops 69% when occupancy_target_pct increases from 39 to 39",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 25.0,
+              "magnitude_pct": 68.5,
+              "description": "Performance drops 68% when occupancy_target_pct increases from 25 to 25",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 37.0,
+              "magnitude_pct": 67.4,
+              "description": "Performance drops 67% when occupancy_target_pct increases from 37 to 37",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 45.0,
+              "magnitude_pct": 66.7,
+              "description": "Performance drops 67% when occupancy_target_pct increases from 45 to 45",
+              "confidence": 1.0
+            }
+          ],
+          "sweet_spots": [
+            {
+              "value": 90.0,
+              "prominence_pct": 38.3,
+              "description": "Performance peak at occupancy_target_pct=90 (score=0.408, prominence=0.383)"
+            },
+            {
+              "value": 90.0,
+              "prominence_pct": 38.3,
+              "description": "Performance peak at occupancy_target_pct=90 (score=0.408, prominence=0.383)"
+            },
+            {
+              "value": 76.0,
+              "prominence_pct": 38.1,
+              "description": "Performance peak at occupancy_target_pct=76 (score=0.394, prominence=0.381)"
+            },
+            {
+              "value": 95.0,
+              "prominence_pct": 38.0,
+              "description": "Performance peak at occupancy_target_pct=95 (score=0.409, prominence=0.380)"
+            },
+            {
+              "value": 95.0,
+              "prominence_pct": 38.0,
+              "description": "Performance peak at occupancy_target_pct=95 (score=0.409, prominence=0.380)"
+            },
+            {
+              "value": 89.0,
+              "prominence_pct": 37.8,
+              "description": "Performance peak at occupancy_target_pct=89 (score=0.405, prominence=0.378)"
+            },
+            {
+              "value": 89.0,
+              "prominence_pct": 37.8,
+              "description": "Performance peak at occupancy_target_pct=89 (score=0.405, prominence=0.378)"
+            },
+            {
+              "value": 81.0,
+              "prominence_pct": 37.6,
+              "description": "Performance peak at occupancy_target_pct=81 (score=0.402, prominence=0.376)"
+            },
+            {
+              "value": 81.0,
+              "prominence_pct": 37.6,
+              "description": "Performance peak at occupancy_target_pct=81 (score=0.402, prominence=0.376)"
+            },
+            {
+              "value": 84.0,
+              "prominence_pct": 37.3,
+              "description": "Performance peak at occupancy_target_pct=84 (score=0.401, prominence=0.373)"
+            }
+          ],
+          "optimal_range": {}
+        }
+      }
+    },
+    "fp16_compute": {
+      "best_configs": [
+        {
+          "params": {
+            "block_size": 1024,
+            "num_chains": 11
+          },
+          "score": 1.0,
+          "bandwidth_gb_s": 2316.8
+        },
+        {
+          "params": {
+            "block_size": 256,
+            "num_chains": 14
+          },
+          "score": 1.0,
+          "bandwidth_gb_s": 2746.3999999999996
+        },
+        {
+          "params": {
+            "block_size": 128,
+            "num_chains": 1
+          },
+          "score": 1.0,
+          "bandwidth_gb_s": 2220.8
+        },
+        {
+          "params": {
+            "block_size": 64,
+            "num_chains": 12
+          },
+          "score": 1.0,
+          "bandwidth_gb_s": 2406.0
+        },
+        {
+          "params": {
+            "block_size": 512,
+            "num_chains": 12
+          },
+          "score": 1.0,
+          "bandwidth_gb_s": 2351.2
+        }
+      ],
+      "worst_configs": [
+        {
+          "params": {
+            "block_size": 32,
+            "num_chains": 1
+          },
+          "score": 0.5474,
+          "bandwidth_gb_s": 1094.8
+        },
+        {
+          "params": {
+            "block_size": 512,
+            "num_chains": 1
+          },
+          "score": 0.5522,
+          "bandwidth_gb_s": 1104.4
+        },
+        {
+          "params": {
+            "block_size": 32,
+            "num_chains": 1
+          },
+          "score": 0.5528,
+          "bandwidth_gb_s": 1105.6
+        },
+        {
+          "params": {
+            "block_size": 64,
+            "num_chains": 1
+          },
+          "score": 0.5538000000000001,
+          "bandwidth_gb_s": 1107.6000000000001
+        },
+        {
+          "params": {
+            "block_size": 256,
+            "num_chains": 1
+          },
+          "score": 0.554,
+          "bandwidth_gb_s": 1108.0
+        }
+      ],
+      "parameters": {
+        "block_size": {
+          "cliffs": [
+            {
+              "threshold": 128.0,
+              "magnitude_pct": 44.2,
+              "description": "Performance drops 44% when block_size increases from 128 to 128",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 32.0,
+              "magnitude_pct": 40.1,
+              "description": "Performance drops 40% when block_size increases from 32 to 32",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 32.0,
+              "magnitude_pct": 40.1,
+              "description": "Performance drops 40% when block_size increases from 32 to 32",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 256.0,
+              "magnitude_pct": 38.8,
+              "description": "Performance drops 39% when block_size increases from 256 to 256",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 256.0,
+              "magnitude_pct": 30.9,
+              "description": "Performance drops 31% when block_size increases from 256 to 256",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 64.0,
+              "magnitude_pct": 29.7,
+              "description": "Performance drops 30% when block_size increases from 64 to 64",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 64.0,
+              "magnitude_pct": 29.6,
+              "description": "Performance drops 30% when block_size increases from 64 to 64",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 512.0,
+              "magnitude_pct": 26.5,
+              "description": "Performance drops 26% when block_size increases from 512 to 512",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 512.0,
+              "magnitude_pct": 23.5,
+              "description": "Performance drops 23% when block_size increases from 512 to 512",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 512.0,
+              "magnitude_pct": 23.5,
+              "description": "Performance drops 23% when block_size increases from 512 to 512",
+              "confidence": 1.0
+            }
+          ],
+          "sweet_spots": [],
+          "optimal_range": {
+            "min": 32,
+            "max": 1024,
+            "count": 6
+          }
+        },
+        "num_chains": {
+          "cliffs": [
+            {
+              "threshold": 1.0,
+              "magnitude_pct": 44.6,
+              "description": "Performance drops 45% when num_chains increases from 1 to 1",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 3.0,
+              "magnitude_pct": 27.8,
+              "description": "Performance drops 28% when num_chains increases from 3 to 3",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 3.0,
+              "magnitude_pct": 27.8,
+              "description": "Performance drops 28% when num_chains increases from 3 to 3",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 2.0,
+              "magnitude_pct": 24.0,
+              "description": "Performance drops 24% when num_chains increases from 2 to 2",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 2.0,
+              "magnitude_pct": 24.0,
+              "description": "Performance drops 24% when num_chains increases from 2 to 2",
+              "confidence": 1.0
+            }
+          ],
+          "sweet_spots": [],
+          "optimal_range": {
+            "min": 2,
+            "max": 15,
+            "count": 14
+          }
+        }
+      }
+    },
+    "wmma": {
+      "best_configs": [
+        {
+          "params": {
+            "k_tiles": 34,
+            "num_chains": 6
+          },
+          "score": 1.0,
+          "bandwidth_gb_s": 3550.4
+        },
+        {
+          "params": {
+            "k_tiles": 124,
+            "num_chains": 2
+          },
+          "score": 1.0,
+          "bandwidth_gb_s": 3582.7999999999997
+        },
+        {
+          "params": {
+            "k_tiles": 88,
+            "num_chains": 6
+          },
+          "score": 1.0,
+          "bandwidth_gb_s": 4501.2
+        },
+        {
+          "params": {
+            "k_tiles": 90,
+            "num_chains": 4
+          },
+          "score": 1.0,
+          "bandwidth_gb_s": 4306.0
+        },
+        {
+          "params": {
+            "k_tiles": 19,
+            "num_chains": 4
+          },
+          "score": 1.0,
+          "bandwidth_gb_s": 2158.8
+        }
+      ],
+      "worst_configs": [
+        {
+          "params": {
+            "k_tiles": 1,
+            "num_chains": 1
+          },
+          "score": 0.024,
+          "bandwidth_gb_s": 48.0
+        },
+        {
+          "params": {
+            "k_tiles": 2,
+            "num_chains": 1
+          },
+          "score": 0.0484,
+          "bandwidth_gb_s": 96.8
+        },
+        {
+          "params": {
+            "k_tiles": 1,
+            "num_chains": 2
+          },
+          "score": 0.0596,
+          "bandwidth_gb_s": 119.2
+        },
+        {
+          "params": {
+            "k_tiles": 1,
+            "num_chains": 3
+          },
+          "score": 0.07,
+          "bandwidth_gb_s": 140.0
+        },
+        {
+          "params": {
+            "k_tiles": 3,
+            "num_chains": 1
+          },
+          "score": 0.0728,
+          "bandwidth_gb_s": 145.6
+        }
+      ],
+      "parameters": {
+        "k_tiles": {
+          "cliffs": [
+            {
+              "threshold": 8.0,
+              "magnitude_pct": 63.7,
+              "description": "Performance drops 64% when k_tiles increases from 8 to 8",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 10.0,
+              "magnitude_pct": 61.2,
+              "description": "Performance drops 61% when k_tiles increases from 10 to 10",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 2.0,
+              "magnitude_pct": 60.4,
+              "description": "Performance drops 60% when k_tiles increases from 2 to 2",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 1.0,
+              "magnitude_pct": 59.7,
+              "description": "Performance drops 60% when k_tiles increases from 1 to 1",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 3.0,
+              "magnitude_pct": 59.5,
+              "description": "Performance drops 60% when k_tiles increases from 3 to 3",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 13.0,
+              "magnitude_pct": 58.6,
+              "description": "Performance drops 59% when k_tiles increases from 13 to 13",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 7.0,
+              "magnitude_pct": 52.1,
+              "description": "Performance drops 52% when k_tiles increases from 7 to 7",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 5.0,
+              "magnitude_pct": 50.3,
+              "description": "Performance drops 50% when k_tiles increases from 5 to 5",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 6.0,
+              "magnitude_pct": 50.2,
+              "description": "Performance drops 50% when k_tiles increases from 6 to 6",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 4.0,
+              "magnitude_pct": 49.8,
+              "description": "Performance drops 50% when k_tiles increases from 4 to 4",
+              "confidence": 1.0
+            }
+          ],
+          "sweet_spots": [
+            {
+              "value": 8.0,
+              "prominence_pct": 81.2,
+              "description": "Performance peak at k_tiles=8 (score=1.000, prominence=0.812)"
+            },
+            {
+              "value": 7.0,
+              "prominence_pct": 78.9,
+              "description": "Performance peak at k_tiles=7 (score=0.957, prominence=0.789)"
+            },
+            {
+              "value": 9.0,
+              "prominence_pct": 77.6,
+              "description": "Performance peak at k_tiles=9 (score=1.000, prominence=0.776)"
+            },
+            {
+              "value": 6.0,
+              "prominence_pct": 72.8,
+              "description": "Performance peak at k_tiles=6 (score=0.861, prominence=0.728)"
+            },
+            {
+              "value": 5.0,
+              "prominence_pct": 65.0,
+              "description": "Performance peak at k_tiles=5 (score=0.773, prominence=0.650)"
+            },
+            {
+              "value": 4.0,
+              "prominence_pct": 55.0,
+              "description": "Performance peak at k_tiles=4 (score=0.622, prominence=0.550)"
+            },
+            {
+              "value": 3.0,
+              "prominence_pct": 46.2,
+              "description": "Performance peak at k_tiles=3 (score=0.510, prominence=0.462)"
+            },
+            {
+              "value": 24.0,
+              "prominence_pct": 32.1,
+              "description": "Performance peak at k_tiles=24 (score=0.924, prominence=0.321)"
+            },
+            {
+              "value": 2.0,
+              "prominence_pct": 31.5,
+              "description": "Performance peak at k_tiles=2 (score=0.339, prominence=0.315)"
+            },
+            {
+              "value": 43.0,
+              "prominence_pct": 12.8,
+              "description": "Performance peak at k_tiles=43 (score=1.000, prominence=0.128)"
+            }
+          ],
+          "optimal_range": {
+            "min": 10,
+            "max": 127,
+            "count": 111
+          }
+        },
+        "num_chains": {
+          "cliffs": [
+            {
+              "threshold": 7.0,
+              "magnitude_pct": 65.3,
+              "description": "Performance drops 65% when num_chains increases from 7 to 7",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 6.0,
+              "magnitude_pct": 60.9,
+              "description": "Performance drops 61% when num_chains increases from 6 to 6",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 2.0,
+              "magnitude_pct": 51.2,
+              "description": "Performance drops 51% when num_chains increases from 2 to 2",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 1.0,
+              "magnitude_pct": 50.4,
+              "description": "Performance drops 50% when num_chains increases from 1 to 1",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 5.0,
+              "magnitude_pct": 50.2,
+              "description": "Performance drops 50% when num_chains increases from 5 to 5",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 3.0,
+              "magnitude_pct": 46.8,
+              "description": "Performance drops 47% when num_chains increases from 3 to 3",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 3.0,
+              "magnitude_pct": 46.3,
+              "description": "Performance drops 46% when num_chains increases from 3 to 3",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 1.0,
+              "magnitude_pct": 40.4,
+              "description": "Performance drops 40% when num_chains increases from 1 to 1",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 4.0,
+              "magnitude_pct": 37.0,
+              "description": "Performance drops 37% when num_chains increases from 4 to 4",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 1.0,
+              "magnitude_pct": 33.5,
+              "description": "Performance drops 34% when num_chains increases from 1 to 1",
+              "confidence": 1.0
+            }
+          ],
+          "sweet_spots": [],
+          "optimal_range": {
+            "min": 2,
+            "max": 7,
+            "count": 6
+          }
+        }
+      }
+    },
+    "atomic": {
+      "best_configs": [
+        {
+          "params": {
+            "block_size": 1024,
+            "unique_targets": 982
+          },
+          "score": 0.86276,
+          "bandwidth_gb_s": 1725.52
+        },
+        {
+          "params": {
+            "block_size": 1024,
+            "unique_targets": 824
+          },
+          "score": 0.8626,
+          "bandwidth_gb_s": 1725.2
+        },
+        {
+          "params": {
+            "block_size": 64,
+            "unique_targets": 880
+          },
+          "score": 0.84626,
+          "bandwidth_gb_s": 1692.52
+        },
+        {
+          "params": {
+            "block_size": 1024,
+            "unique_targets": 974
+          },
+          "score": 0.83562,
+          "bandwidth_gb_s": 1671.24
+        },
+        {
+          "params": {
+            "block_size": 1024,
+            "unique_targets": 918
+          },
+          "score": 0.8304,
+          "bandwidth_gb_s": 1660.8
+        }
+      ],
+      "worst_configs": [
+        {
+          "params": {
+            "block_size": 32,
+            "unique_targets": 1
+          },
+          "score": 0.0057599999999999995,
+          "bandwidth_gb_s": 11.52
+        },
+        {
+          "params": {
+            "block_size": 64,
+            "unique_targets": 1
+          },
+          "score": 0.00666,
+          "bandwidth_gb_s": 13.32
+        },
+        {
+          "params": {
+            "block_size": 128,
+            "unique_targets": 1
+          },
+          "score": 0.006679999999999999,
+          "bandwidth_gb_s": 13.36
+        },
+        {
+          "params": {
+            "block_size": 256,
+            "unique_targets": 1
+          },
+          "score": 0.0067,
+          "bandwidth_gb_s": 13.4
+        },
+        {
+          "params": {
+            "block_size": 1024,
+            "unique_targets": 1
+          },
+          "score": 0.006719999999999999,
+          "bandwidth_gb_s": 13.44
+        }
+      ],
+      "parameters": {
+        "block_size": {
+          "cliffs": [
+            {
+              "threshold": 256.0,
+              "magnitude_pct": 50.0,
+              "description": "Performance drops 50% when block_size increases from 256 to 256",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 512.0,
+              "magnitude_pct": 50.0,
+              "description": "Performance drops 50% when block_size increases from 512 to 512",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 1024.0,
+              "magnitude_pct": 50.0,
+              "description": "Performance drops 50% when block_size increases from 1024 to 1024",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 1024.0,
+              "magnitude_pct": 49.9,
+              "description": "Performance drops 50% when block_size increases from 1024 to 1024",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 128.0,
+              "magnitude_pct": 49.9,
+              "description": "Performance drops 50% when block_size increases from 128 to 128",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 1024.0,
+              "magnitude_pct": 49.7,
+              "description": "Performance drops 50% when block_size increases from 1024 to 1024",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 512.0,
+              "magnitude_pct": 49.7,
+              "description": "Performance drops 50% when block_size increases from 512 to 512",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 32.0,
+              "magnitude_pct": 49.6,
+              "description": "Performance drops 50% when block_size increases from 32 to 32",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 64.0,
+              "magnitude_pct": 49.4,
+              "description": "Performance drops 49% when block_size increases from 64 to 64",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 256.0,
+              "magnitude_pct": 49.4,
+              "description": "Performance drops 49% when block_size increases from 256 to 256",
+              "confidence": 1.0
+            }
+          ],
+          "sweet_spots": [
+            {
+              "value": 1024.0,
+              "prominence_pct": 85.6,
+              "description": "Performance peak at block_size=1024 (score=0.863, prominence=0.856)"
+            },
+            {
+              "value": 1024.0,
+              "prominence_pct": 85.6,
+              "description": "Performance peak at block_size=1024 (score=0.863, prominence=0.856)"
+            },
+            {
+              "value": 64.0,
+              "prominence_pct": 84.0,
+              "description": "Performance peak at block_size=64 (score=0.846, prominence=0.841)"
+            },
+            {
+              "value": 64.0,
+              "prominence_pct": 84.0,
+              "description": "Performance peak at block_size=64 (score=0.846, prominence=0.840)"
+            },
+            {
+              "value": 512.0,
+              "prominence_pct": 81.1,
+              "description": "Performance peak at block_size=512 (score=0.818, prominence=0.811)"
+            },
+            {
+              "value": 512.0,
+              "prominence_pct": 81.1,
+              "description": "Performance peak at block_size=512 (score=0.818, prominence=0.811)"
+            },
+            {
+              "value": 256.0,
+              "prominence_pct": 77.2,
+              "description": "Performance peak at block_size=256 (score=0.779, prominence=0.772)"
+            },
+            {
+              "value": 256.0,
+              "prominence_pct": 77.2,
+              "description": "Performance peak at block_size=256 (score=0.779, prominence=0.772)"
+            },
+            {
+              "value": 128.0,
+              "prominence_pct": 73.3,
+              "description": "Performance peak at block_size=128 (score=0.739, prominence=0.733)"
+            },
+            {
+              "value": 128.0,
+              "prominence_pct": 73.3,
+              "description": "Performance peak at block_size=128 (score=0.739, prominence=0.733)"
+            }
+          ],
+          "optimal_range": {}
+        },
+        "unique_targets": {
+          "cliffs": [
+            {
+              "threshold": 248.0,
+              "magnitude_pct": 57.4,
+              "description": "Performance drops 57% when unique_targets increases from 248 to 248",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 250.0,
+              "magnitude_pct": 55.6,
+              "description": "Performance drops 56% when unique_targets increases from 250 to 250",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 114.0,
+              "magnitude_pct": 55.2,
+              "description": "Performance drops 55% when unique_targets increases from 114 to 114",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 733.0,
+              "magnitude_pct": 51.9,
+              "description": "Performance drops 52% when unique_targets increases from 728 to 733",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 564.0,
+              "magnitude_pct": 50.7,
+              "description": "Performance drops 51% when unique_targets increases from 564 to 564",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 663.0,
+              "magnitude_pct": 50.6,
+              "description": "Performance drops 51% when unique_targets increases from 663 to 663",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 181.0,
+              "magnitude_pct": 50.3,
+              "description": "Performance drops 50% when unique_targets increases from 181 to 181",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 870.0,
+              "magnitude_pct": 50.0,
+              "description": "Performance drops 50% when unique_targets increases from 870 to 870",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 595.0,
+              "magnitude_pct": 49.8,
+              "description": "Performance drops 50% when unique_targets increases from 595 to 595",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 661.0,
+              "magnitude_pct": 49.2,
+              "description": "Performance drops 49% when unique_targets increases from 656 to 661",
+              "confidence": 1.0
+            }
+          ],
+          "sweet_spots": [
+            {
+              "value": 971.0,
+              "prominence_pct": 49.4,
+              "description": "Performance peak at unique_targets=971 (score=0.753, prominence=0.494)"
+            },
+            {
+              "value": 828.0,
+              "prominence_pct": 44.9,
+              "description": "Performance peak at unique_targets=828 (score=0.756, prominence=0.449)"
+            },
+            {
+              "value": 824.0,
+              "prominence_pct": 39.6,
+              "description": "Performance peak at unique_targets=824 (score=0.863, prominence=0.396)"
+            },
+            {
+              "value": 536.0,
+              "prominence_pct": 39.0,
+              "description": "Performance peak at unique_targets=536 (score=0.565, prominence=0.390)"
+            },
+            {
+              "value": 568.0,
+              "prominence_pct": 38.4,
+              "description": "Performance peak at unique_targets=568 (score=0.573, prominence=0.384)"
+            },
+            {
+              "value": 736.0,
+              "prominence_pct": 35.7,
+              "description": "Performance peak at unique_targets=736 (score=0.656, prominence=0.357)"
+            },
+            {
+              "value": 794.0,
+              "prominence_pct": 34.7,
+              "description": "Performance peak at unique_targets=794 (score=0.575, prominence=0.347)"
+            },
+            {
+              "value": 656.0,
+              "prominence_pct": 32.3,
+              "description": "Performance peak at unique_targets=656 (score=0.656, prominence=0.323)"
+            },
+            {
+              "value": 728.0,
+              "prominence_pct": 32.2,
+              "description": "Performance peak at unique_targets=728 (score=0.620, prominence=0.322)"
+            },
+            {
+              "value": 631.0,
+              "prominence_pct": 30.6,
+              "description": "Performance peak at unique_targets=631 (score=0.500, prominence=0.306)"
+            }
+          ],
+          "optimal_range": {
+            "min": 880,
+            "max": 982,
+            "count": 5
+          }
+        }
+      }
+    },
+    "overlap": {
+      "best_configs": [
+        {
+          "params": {
+            "compute_intensity": 1,
+            "working_set_kb": 82719
+          },
+          "score": 0.94551,
+          "bandwidth_gb_s": 1891.02
+        },
+        {
+          "params": {
+            "compute_intensity": 1,
+            "working_set_kb": 62757
+          },
+          "score": 0.938845,
+          "bandwidth_gb_s": 1877.69
+        },
+        {
+          "params": {
+            "compute_intensity": 1,
+            "working_set_kb": 57238
+          },
+          "score": 0.912825,
+          "bandwidth_gb_s": 1825.65
+        },
+        {
+          "params": {
+            "compute_intensity": 1,
+            "working_set_kb": 75444
+          },
+          "score": 0.9041849999999999,
+          "bandwidth_gb_s": 1808.37
+        },
+        {
+          "params": {
+            "compute_intensity": 2,
+            "working_set_kb": 75444
+          },
+          "score": 0.893475,
+          "bandwidth_gb_s": 1786.95
+        }
+      ],
+      "worst_configs": [
+        {
+          "params": {
+            "compute_intensity": 60,
+            "working_set_kb": 2
+          },
+          "score": 0.000165,
+          "bandwidth_gb_s": 0.33
+        },
+        {
+          "params": {
+            "compute_intensity": 29,
+            "working_set_kb": 1
+          },
+          "score": 0.000175,
+          "bandwidth_gb_s": 0.35
+        },
+        {
+          "params": {
+            "compute_intensity": 45,
+            "working_set_kb": 3
+          },
+          "score": 0.000175,
+          "bandwidth_gb_s": 0.35
+        },
+        {
+          "params": {
+            "compute_intensity": 63,
+            "working_set_kb": 3
+          },
+          "score": 0.00017999999999999998,
+          "bandwidth_gb_s": 0.36
+        },
+        {
+          "params": {
+            "compute_intensity": 32,
+            "working_set_kb": 3
+          },
+          "score": 0.00019,
+          "bandwidth_gb_s": 0.38
+        }
+      ],
+      "parameters": {
+        "compute_intensity": {
+          "cliffs": [
+            {
+              "threshold": 46.0,
+              "magnitude_pct": 82.3,
+              "description": "Performance drops 82% when compute_intensity increases from 46 to 46",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 32.0,
+              "magnitude_pct": 82.2,
+              "description": "Performance drops 82% when compute_intensity increases from 32 to 32",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 11.0,
+              "magnitude_pct": 76.9,
+              "description": "Performance drops 77% when compute_intensity increases from 11 to 11",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 26.0,
+              "magnitude_pct": 76.1,
+              "description": "Performance drops 76% when compute_intensity increases from 26 to 26",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 19.0,
+              "magnitude_pct": 72.5,
+              "description": "Performance drops 72% when compute_intensity increases from 19 to 19",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 36.0,
+              "magnitude_pct": 70.4,
+              "description": "Performance drops 70% when compute_intensity increases from 36 to 36",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 54.0,
+              "magnitude_pct": 70.0,
+              "description": "Performance drops 70% when compute_intensity increases from 54 to 54",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 34.0,
+              "magnitude_pct": 68.2,
+              "description": "Performance drops 68% when compute_intensity increases from 34 to 34",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 6.0,
+              "magnitude_pct": 67.4,
+              "description": "Performance drops 67% when compute_intensity increases from 6 to 6",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 60.0,
+              "magnitude_pct": 66.8,
+              "description": "Performance drops 67% when compute_intensity increases from 60 to 60",
+              "confidence": 1.0
+            }
+          ],
+          "sweet_spots": [
+            {
+              "value": 2.0,
+              "prominence_pct": 89.3,
+              "description": "Performance peak at compute_intensity=2 (score=0.893, prominence=0.893)"
+            },
+            {
+              "value": 3.0,
+              "prominence_pct": 85.2,
+              "description": "Performance peak at compute_intensity=3 (score=0.852, prominence=0.852)"
+            },
+            {
+              "value": 4.0,
+              "prominence_pct": 84.5,
+              "description": "Performance peak at compute_intensity=4 (score=0.846, prominence=0.845)"
+            },
+            {
+              "value": 5.0,
+              "prominence_pct": 81.6,
+              "description": "Performance peak at compute_intensity=5 (score=0.816, prominence=0.816)"
+            },
+            {
+              "value": 6.0,
+              "prominence_pct": 76.6,
+              "description": "Performance peak at compute_intensity=6 (score=0.767, prominence=0.766)"
+            },
+            {
+              "value": 7.0,
+              "prominence_pct": 75.9,
+              "description": "Performance peak at compute_intensity=7 (score=0.760, prominence=0.759)"
+            },
+            {
+              "value": 8.0,
+              "prominence_pct": 74.1,
+              "description": "Performance peak at compute_intensity=8 (score=0.741, prominence=0.741)"
+            },
+            {
+              "value": 9.0,
+              "prominence_pct": 70.1,
+              "description": "Performance peak at compute_intensity=9 (score=0.701, prominence=0.701)"
+            },
+            {
+              "value": 10.0,
+              "prominence_pct": 66.7,
+              "description": "Performance peak at compute_intensity=10 (score=0.667, prominence=0.667)"
+            },
+            {
+              "value": 11.0,
+              "prominence_pct": 66.5,
+              "description": "Performance peak at compute_intensity=11 (score=0.666, prominence=0.665)"
+            }
+          ],
+          "optimal_range": {}
+        },
+        "working_set_kb": {
+          "cliffs": [
+            {
+              "threshold": 16967.0,
+              "magnitude_pct": 82.0,
+              "description": "Performance drops 82% when working_set_kb increases from 16895 to 16967",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 76584.0,
+              "magnitude_pct": 81.8,
+              "description": "Performance drops 82% when working_set_kb increases from 76251 to 76584",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 72849.0,
+              "magnitude_pct": 80.3,
+              "description": "Performance drops 80% when working_set_kb increases from 72833 to 72849",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 15774.0,
+              "magnitude_pct": 79.9,
+              "description": "Performance drops 80% when working_set_kb increases from 15774 to 15774",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 22984.0,
+              "magnitude_pct": 79.8,
+              "description": "Performance drops 80% when working_set_kb increases from 22968 to 22984",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 43173.0,
+              "magnitude_pct": 78.1,
+              "description": "Performance drops 78% when working_set_kb increases from 43068 to 43173",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 80188.0,
+              "magnitude_pct": 77.4,
+              "description": "Performance drops 77% when working_set_kb increases from 79909 to 80188",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 65504.0,
+              "magnitude_pct": 76.4,
+              "description": "Performance drops 76% when working_set_kb increases from 65064 to 65504",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 32647.0,
+              "magnitude_pct": 76.2,
+              "description": "Performance drops 76% when working_set_kb increases from 32464 to 32647",
+              "confidence": 1.0
+            },
+            {
+              "threshold": 88753.0,
+              "magnitude_pct": 76.1,
+              "description": "Performance drops 76% when working_set_kb increases from 88320 to 88753",
+              "confidence": 1.0
+            }
+          ],
+          "sweet_spots": [
+            {
+              "value": 76251.0,
+              "prominence_pct": 69.4,
+              "description": "Performance peak at working_set_kb=76251 (score=0.849, prominence=0.694)"
+            },
+            {
+              "value": 32945.0,
+              "prominence_pct": 65.5,
+              "description": "Performance peak at working_set_kb=32945 (score=0.752, prominence=0.655)"
+            },
+            {
+              "value": 67203.0,
+              "prominence_pct": 65.3,
+              "description": "Performance peak at working_set_kb=67203 (score=0.805, prominence=0.653)"
+            },
+            {
+              "value": 43425.0,
+              "prominence_pct": 64.8,
+              "description": "Performance peak at working_set_kb=43425 (score=0.768, prominence=0.648)"
+            },
+            {
+              "value": 82719.0,
+              "prominence_pct": 63.3,
+              "description": "Performance peak at working_set_kb=82719 (score=0.946, prominence=0.633)"
+            },
+            {
+              "value": 68809.0,
+              "prominence_pct": 61.3,
+              "description": "Performance peak at working_set_kb=68809 (score=0.842, prominence=0.613)"
+            },
+            {
+              "value": 79909.0,
+              "prominence_pct": 58.4,
+              "description": "Performance peak at working_set_kb=79909 (score=0.754, prominence=0.584)"
+            },
+            {
+              "value": 78531.0,
+              "prominence_pct": 57.5,
+              "description": "Performance peak at working_set_kb=78531 (score=0.780, prominence=0.575)"
+            },
+            {
+              "value": 65064.0,
+              "prominence_pct": 57.2,
+              "description": "Performance peak at working_set_kb=65064 (score=0.749, prominence=0.572)"
+            },
+            {
+              "value": 88320.0,
+              "prominence_pct": 56.9,
+              "description": "Performance peak at working_set_kb=88320 (score=0.748, prominence=0.569)"
+            }
+          ],
+          "optimal_range": {
+            "min": 52203,
+            "max": 76251,
+            "count": 3
+          }
+        }
+      }
+    }
+  },
+  "general_rules": [
+    {
+      "rule": "AVOID_LDS_STRIDE_32",
+      "description": "LDS stride=32 causes bank conflicts: 353 GB/s vs 878 GB/s at stride=22 (60% penalty)",
+      "impact": "high",
+      "recommendation": "Use stride=22 or other non-power-of-2 strides to avoid 32-bank LDS conflicts"
+    },
+    {
+      "rule": "USE_STRIDE_1",
+      "description": "Stride-1 (coalesced) memory access provides 2-10x higher bandwidth than strided access",
+      "impact": "critical",
+      "recommendation": "Ensure global memory accesses are coalesced (consecutive threads access consecutive addresses)"
+    },
+    {
+      "rule": "LEVERAGE_INFINITY_CACHE",
+      "description": "Coalesced access achieves 2562 GB/s (2.7x DRAM peak) via 96MB Infinity Cache",
+      "impact": "high",
+      "recommendation": "Keep working sets under 96MB and use stride-1 access to benefit from Infinity Cache's ~2.5x bandwidth amplification"
+    },
+    {
+      "rule": "OPTIMAL_BLOCK_SIZE",
+      "description": "Block size 128 provides best bandwidth (839 GB/s)",
+      "impact": "medium",
+      "recommendation": "Use block_size=128 (4 waves of 32) for memory-bound kernels on RDNA3"
+    },
+    {
+      "rule": "USE_ILP_FMA_CHAINS",
+      "description": "Use 7 independent FMA accumulator chains for 50.1 TFLOPS vs 21.5 TFLOPS with serial chain (2.3x speedup)",
+      "impact": "critical",
+      "recommendation": "RDNA3 FMA latency is ~4 cycles. Use 7 independent accumulator chains at block_size=512 to saturate the FMA pipeline"
+    },
+    {
+      "rule": "USE_FP16_PACKED_ILP",
+      "description": "Use 11 independent half2 FMA chains for 57.9 FP16 TFLOPS vs 55.5 TFLOPS with serial chain (1.0x speedup)",
+      "impact": "critical",
+      "recommendation": "RDNA3 dual-issue FP16 via packed half2. Use 11 independent half2 chains at block_size=1024 to saturate both FP16 pipelines"
+    },
+    {
+      "rule": "USE_WMMA_MATRIX_OPS",
+      "description": "WMMA achieves 88.8 TFLOPS with 6 chains, k_tiles=34 (16x16x16 per instruction)",
+      "impact": "high",
+      "recommendation": "Use WMMA with 6 independent accumulator chains and k_tiles>=34 for peak matrix throughput"
+    },
+    {
+      "rule": "MINIMIZE_ATOMIC_CONTENTION",
+      "description": "Atomic throughput: 431 GOPS uncontended vs 2.9 GOPS fully contended (99% penalty)",
+      "impact": "high",
+      "recommendation": "Spread atomic targets across unique addresses. Use shared memory atomics + final global reduce for reductions"
+    },
+    {
+      "rule": "ROOFLINE_KNEE",
+      "description": "Memory bandwidth saturates at compute_intensity=2 (781 GB/s). Beyond this, kernel is compute-bound",
+      "impact": "medium",
+      "recommendation": "For memory-bound kernels, add at least 2 FMAs per loaded element to hide memory latency"
+    }
+  ]
+}
