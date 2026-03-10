@@ -6,6 +6,7 @@ setup(
     version="0.1.0",
     description="RDNA3 atlas-backed optimization layer demo by Craig Hasselbring",
     author="Craig Hasselbring",
+    author_email="craig@slentosystems.com",
     packages=find_packages(),
     include_package_data=True,
     install_requires=[],
