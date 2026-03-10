@@ -9,7 +9,7 @@ description = "RDNA3 atlas-backed optimization layer demo by Craig Hasselbring"
 readme = "README.md"
 requires-python = ">=3.10"
 authors = [
-  { name = "Craig Hasselbring", email = "craig@localhost" }
+  { name = "Craig Hasselbring" }
 ]
 license = { text = "MIT" }
 classifiers = [
